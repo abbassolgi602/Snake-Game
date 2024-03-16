@@ -35,3 +35,20 @@ for (i = 0; i < 40; i++) {
         }
     }
 }
+
+var direction = 'ArrowRight';
+
+
+function createRandom() {
+    return Math.floor(Math.random() * 40);
+}
+var foodPosation = { x: createRandom(), y: createRandom() }
+console.log(foodPosation)
+function createFood() {
+    return foodPosation = { x: createRandom(), y: createRandom() }
+}
+function showFood(foodPosation) {
+    ctx.beginPath();
+    ctx.rect(foodPosation.x * size, foodPosation.y * size, size, size);
+    ctx.stroke();
+}
