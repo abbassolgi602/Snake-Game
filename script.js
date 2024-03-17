@@ -119,4 +119,23 @@ function moveSnake(snake) {
         }
     }
 
+    if (
+        (snake[0].x < 0)
+        || (snake[0].x >= canvasWidth / size)
+        || (snake[0].y < 0)
+        || (snake[0].y >= canvasWidth / size)
+    ) {
+        endGame();
+    }
+    for (i = 1; i < snake.length; i++) {
+        if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
+            endGame();
+        }
+    }
+
+    if (snake[0].x == foodPosation.x && snake[0].y == foodPosation.y) {
+        growSnake(snake, direction);
+        foodPosation = createFood();
+        animationFood(snake[0].x, snake[0].y);
+    }
 }
