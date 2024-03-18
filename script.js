@@ -139,3 +139,22 @@ function moveSnake(snake) {
         animationFood(snake[0].x, snake[0].y);
     }
 }
+
+function animationFood(x, y) {
+    var i = 0;
+    var animationOnFood = setInterval(() => {
+        if (i < 20) {
+            ctx.beginPath();
+            ctx.arc(x * size + size / 2, y * size + size / 2, i, 0, 360);
+            ctx.fillStyle = "#13970b";
+            ctx.lineWidth = 0;
+            ctx.shadowColor = "#13970b";
+            ctx.shadowBlur = 0;
+            ctx.fill();
+            i++;
+        } else {
+            clearInterval(animationOnFood)
+        }
+    }, i);
+    i = 0;
+}
