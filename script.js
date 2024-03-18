@@ -89,15 +89,6 @@ function moveSnake(snake) {
     snake.pop();
     showFood(foodPosation);
 
-    if (direction == 'ArrowRight') {
-        snake.unshift({ x: snake[0].x + 1, y: snake[0].y });
-    } else if (direction == 'ArrowLeft') {
-        snake.unshift({ x: snake[0].x - 1, y: snake[0].y });
-    } else if (direction == 'ArrowDown') {
-        snake.unshift({ x: snake[0].x, y: snake[0].y + 1 });
-    } else if (direction == 'ArrowUp') {
-        snake.unshift({ x: snake[0].x, y: snake[0].y - 1 });
-    }
 
     for (i = 0; i < snake.length; i++) {
         if (i == 0) {
