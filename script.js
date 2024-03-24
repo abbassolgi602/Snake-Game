@@ -177,3 +177,11 @@ function growSnake(snake, direction) {
             break;
     }
 }
+
+var moving = setInterval(() => {
+    moveSnake(snake);
+}, speedGame);
+
+function endGame() {
+    clearInterval(moving);
+}
