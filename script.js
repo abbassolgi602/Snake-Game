@@ -89,6 +89,15 @@ function moveSnake(snake) {
     snake.pop();
     showFood(foodPosation);
 
+    if (direction == 'ArrowRight') {
+        snake.unshift({ x: snake[0].x + 1, y: snake[0].y });
+    } else if (direction == 'ArrowLeft') {
+        snake.unshift({ x: snake[0].x - 1, y: snake[0].y });
+    } else if (direction == 'ArrowDown') {
+        snake.unshift({ x: snake[0].x, y: snake[0].y + 1 });
+    } else if (direction == 'ArrowUp') {
+        snake.unshift({ x: snake[0].x, y: snake[0].y - 1 });
+    }
 
     for (i = 0; i < snake.length; i++) {
         if (i == 0) {
@@ -148,4 +157,23 @@ function animationFood(x, y) {
         }
     }, i);
     i = 0;
+}
+
+function growSnake(snake, direction) {
+    switch (direction) {
+        case 'ArrowRight':
+            snake.push({ x: snake[snake.length - 1].x + 1, y: snake[snake.length - 1].y });
+            break;
+        case 'ArrowLeft':
+            snake.push({ x: snake[snake.length - 1].x - 1, y: snake[snake.length - 1].y });
+            break;
+        case 'ArrowUp':
+            snake.push({ x: snake[snake.length - 1].x, y: snake[snake.length - 1].y + 1 });
+            break;
+        case 'ArrowDown':
+            snake.push({ x: snake[snake.length - 1].x, y: snake[snake.length - 1].y - 1 });
+            break;
+        default:
+            break;
+    }
 }
