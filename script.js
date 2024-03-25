@@ -15,7 +15,6 @@ ctx.shadowColor = "#ffffffff";
 ctx.shadowBlur = 0;
 ctx.fill();
 
-
 var snake = [
     { x: 20, y: 20 },
     { x: 19, y: 20 },
@@ -81,10 +80,24 @@ window.addEventListener('keydown', (e) => {
     }
 });
 function moveSnake(snake) {
+
     ctx.beginPath();
     ctx.rect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "#eeeeee88";
     ctx.fill();
+
+    // for (i = 0; i < canvasWidth / size; i++) {
+    //     for (j = 0; j < canvasWidth / size; j++) {
+    //         ctx.beginPath();
+    //         ctx.rect(size * j * 2, 0, size, canvasHeight);
+    //         ctx.rect(0, size * i * 2 + size, canvasWidth, size);
+    //         ctx.fillStyle = "#0000007a";
+    //         ctx.lineWidth = 0;
+    //         ctx.shadowColor = "#0000007a";
+    //         ctx.shadowBlur = 0;
+    //         ctx.fill();
+    //     }
+    // }
 
     snake.pop();
     showFood(foodPosation);
