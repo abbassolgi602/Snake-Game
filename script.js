@@ -22,6 +22,158 @@ var snake = [
     { x: 19, y: 18 },
     { x: 19, y: 17 },
     { x: 19, y: 16 },
+    { x: 20, y: 17 },
+    { x: 20, y: 18 },
+    { x: 20, y: 19 },
+    { x: 20, y: 20 },
+    { x: 20, y: 21 },
+    { x: 20, y: 22 },
+    { x: 20, y: 23 },
+    { x: 20, y: 24 },
+    { x: 20, y: 25 },
+    { x: 20, y: 26 },
+    { x: 20, y: 27 },
+    { x: 20, y: 28 },
+    { x: 20, y: 29 },
+    { x: 20, y: 30 },
+    { x: 20, y: 31 },
+    { x: 20, y: 32 },
+    { x: 20, y: 33 },
+    { x: 20, y: 34 },
+    { x: 20, y: 35 },
+    { x: 20, y: 36 },
+    { x: 20, y: 19 },
+    { x: 20, y: 20 },
+    { x: 20, y: 21 },
+    { x: 20, y: 22 },
+    { x: 20, y: 23 },
+    { x: 20, y: 24 },
+    { x: 20, y: 25 },
+    { x: 20, y: 26 },
+    { x: 20, y: 27 },
+    { x: 20, y: 28 },
+    { x: 20, y: 29 },
+    { x: 20, y: 30 },
+    { x: 20, y: 31 },
+    { x: 20, y: 32 },
+    { x: 20, y: 33 },
+    { x: 20, y: 34 },
+    { x: 20, y: 35 },
+    { x: 20, y: 36 },
+    { x: 20, y: 17 },
+    { x: 20, y: 18 },
+    { x: 20, y: 19 },
+    { x: 20, y: 20 },
+    { x: 20, y: 21 },
+    { x: 20, y: 22 },
+    { x: 20, y: 23 },
+    { x: 20, y: 24 },
+    { x: 20, y: 25 },
+    { x: 20, y: 26 },
+    { x: 20, y: 27 },
+    { x: 20, y: 28 },
+    { x: 20, y: 29 },
+    { x: 20, y: 30 },
+    { x: 20, y: 31 },
+    { x: 20, y: 32 },
+    { x: 20, y: 33 },
+    { x: 20, y: 34 },
+    { x: 20, y: 35 },
+    { x: 20, y: 36 },
+    { x: 20, y: 19 },
+    { x: 20, y: 20 },
+    { x: 20, y: 21 },
+    { x: 20, y: 22 },
+    { x: 20, y: 23 },
+    { x: 20, y: 24 },
+    { x: 20, y: 25 },
+    { x: 20, y: 26 },
+    { x: 20, y: 27 },
+    { x: 20, y: 28 },
+    { x: 20, y: 29 },
+    { x: 20, y: 30 },
+    { x: 20, y: 31 },
+    { x: 20, y: 32 },
+    { x: 20, y: 33 },
+    { x: 20, y: 34 },
+    { x: 20, y: 35 },
+    { x: 20, y: 36 },
+    { x: 20, y: 17 },
+    { x: 20, y: 18 },
+    { x: 20, y: 19 },
+    { x: 20, y: 20 },
+    { x: 20, y: 21 },
+    { x: 20, y: 22 },
+    { x: 20, y: 23 },
+    { x: 20, y: 24 },
+    { x: 20, y: 25 },
+    { x: 20, y: 26 },
+    { x: 20, y: 27 },
+    { x: 20, y: 28 },
+    { x: 20, y: 29 },
+    { x: 20, y: 30 },
+    { x: 20, y: 31 },
+    { x: 20, y: 32 },
+    { x: 20, y: 33 },
+    { x: 20, y: 34 },
+    { x: 20, y: 35 },
+    { x: 20, y: 36 },
+    { x: 20, y: 19 },
+    { x: 20, y: 20 },
+    { x: 20, y: 21 },
+    { x: 20, y: 22 },
+    { x: 20, y: 23 },
+    { x: 20, y: 24 },
+    { x: 20, y: 25 },
+    { x: 20, y: 26 },
+    { x: 20, y: 27 },
+    { x: 20, y: 28 },
+    { x: 20, y: 29 },
+    { x: 20, y: 30 },
+    { x: 20, y: 31 },
+    { x: 20, y: 32 },
+    { x: 20, y: 33 },
+    { x: 20, y: 34 },
+    { x: 20, y: 35 },
+    { x: 20, y: 36 },
+    { x: 20, y: 17 },
+    { x: 20, y: 18 },
+    { x: 20, y: 19 },
+    { x: 20, y: 20 },
+    { x: 20, y: 21 },
+    { x: 20, y: 22 },
+    { x: 20, y: 23 },
+    { x: 20, y: 24 },
+    { x: 20, y: 25 },
+    { x: 20, y: 26 },
+    { x: 20, y: 27 },
+    { x: 20, y: 28 },
+    { x: 20, y: 29 },
+    { x: 20, y: 30 },
+    { x: 20, y: 31 },
+    { x: 20, y: 32 },
+    { x: 20, y: 33 },
+    { x: 20, y: 34 },
+    { x: 20, y: 35 },
+    { x: 20, y: 36 },
+    { x: 20, y: 19 },
+    { x: 20, y: 20 },
+    { x: 20, y: 21 },
+    { x: 20, y: 22 },
+    { x: 20, y: 23 },
+    { x: 20, y: 24 },
+    { x: 20, y: 25 },
+    { x: 20, y: 26 },
+    { x: 20, y: 27 },
+    { x: 20, y: 28 },
+    { x: 20, y: 29 },
+    { x: 20, y: 30 },
+    { x: 20, y: 31 },
+    { x: 20, y: 32 },
+    { x: 20, y: 33 },
+    { x: 20, y: 34 },
+    { x: 20, y: 35 },
+    { x: 20, y: 36 },
 ];
 
 var arry = [];
@@ -48,10 +200,25 @@ var direction = 'ArrowRight';
 function createRandom() {
     return Math.floor(Math.random() * canvasWidth / size);
 }
+var samePosation = false;
 var foodPosation = { x: createRandom(), y: createRandom() }
-console.log(foodPosation)
+// Fix The Position of Food
 function createFood() {
-    return foodPosation = { x: createRandom(), y: createRandom() }
+    foodPosation = { x: createRandom(), y: createRandom() }
+    samePosation = false;
+    for (var i = 0; i < snake.length; i++) {
+        if (foodPosation.x == snake[i].x && foodPosation.y == snake[i].y) {
+            samePosation = true;
+            break;
+        }
+    }
+    if (samePosation == true) {
+        console.log('sdf');
+        foodPosation = { x: createRandom(), y: createRandom() }
+    } else {
+        console.log(foodPosation);
+    }
+    return foodPosation;
 }
 function showFood(foodPosation) {
 
@@ -66,20 +233,24 @@ function showFood(foodPosation) {
 
 }
 
-window.addEventListener('keydown', (e) => {
-    if (
-        (direction == 'ArrowRight' || direction == 'ArrowLeft')
-        && (e.key != 'ArrowRight' && e.key != 'ArrowLeft')
-    ) {
-        direction = e.key;
-    } else if (
-        (direction == 'ArrowUp' || direction == 'ArrowDown')
-        && (e.key != 'ArrowUp' && e.key != 'ArrowDown')
-    ) {
-        direction = e.key;
-    }
-});
 function moveSnake(snake) {
+
+    window.addEventListener('keydown', (e) => {
+        if (e.key == 'ArrowRight' || e.key == 'ArrowLeft' || e.key == 'ArrowDown' || e.key == 'ArrowUp') {
+            if (
+                (direction == 'ArrowRight' || direction == 'ArrowLeft')
+                && (e.key != 'ArrowRight' && e.key != 'ArrowLeft')
+            ) {
+                direction = e.key;
+            } else if (
+                (direction == 'ArrowUp' || direction == 'ArrowDown')
+                && (e.key != 'ArrowUp' && e.key != 'ArrowDown')
+            ) {
+                direction = e.key;
+            }
+        }
+    });
+
 
     ctx.beginPath();
     ctx.rect(0, 0, canvas.width, canvas.height);
@@ -112,7 +283,7 @@ function moveSnake(snake) {
         snake.unshift({ x: snake[0].x, y: snake[0].y - 1 });
     }
 
-    for (i = 0; i < snake.length; i++) {
+    for (var i = 0; i < snake.length; i++) {
         if (i == 0) {
             ctx.beginPath();
             ctx.rect(size * snake[i].x, size * snake[i].y, size, size);
@@ -140,7 +311,7 @@ function moveSnake(snake) {
     ) {
         endGame();
     }
-    for (i = 1; i < snake.length; i++) {
+    for (var i = 1; i < snake.length; i++) {
         if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
             endGame();
         }
@@ -148,6 +319,7 @@ function moveSnake(snake) {
 
     if (snake[0].x == foodPosation.x && snake[0].y == foodPosation.y) {
         growSnake(snake, direction);
+        console.log(createFood())
         foodPosation = createFood();
         animationFood(snake[0].x, snake[0].y);
     }
