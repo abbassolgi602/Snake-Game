@@ -232,6 +232,28 @@ function showFood(foodPosation) {
     ctx.closePath();
 
 }
+function createBackground() {
+    ctx.beginPath();
+    ctx.rect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#ddfed9";
+    ctx.fill();
+    // for (var i = 0; i < canvasWidth / size; i += 2) {
+    //     for (var j = 0; j < canvasHeight / size; j++) {
+    //         ctx.beginPath();
+    //         ctx.rect((i) * size, j * size, size, size);
+    //         ctx.fillStyle = "#89ff6c82";
+    //         ctx.fill();
+
+
+    //         // ctx.beginPath();
+    //         // ctx.rect(0, i * size, canvas.width, size);
+    //         // ctx.fillStyle = "#c0ffb8";
+    //         // ctx.fill();
+    //     }
+    // }
+
+}
+
 
 function moveSnake(snake) {
 
@@ -252,11 +274,7 @@ function moveSnake(snake) {
     });
 
 
-    ctx.beginPath();
-    ctx.rect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "#eeeeee88";
-    ctx.fill();
-
+    createBackground();
     // for (i = 0; i < canvasWidth / size; i++) {
     //     for (j = 0; j < canvasWidth / size; j++) {
     //         ctx.beginPath();
