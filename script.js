@@ -4,8 +4,8 @@ const ctx = canvas.getContext('2d');
 const canvasWidth = canvas.offsetWidth;
 const canvasHeight = canvas.offsetHeight;
 
-const size = 15;
-const speedGame = 80;
+const size = 20;
+const speedGame = 100;
 
 ctx.beginPath();
 ctx.rect(0, 0, canvasWidth, canvasHeight);
@@ -202,21 +202,19 @@ function createRandom() {
 }
 var samePosation = false;
 var foodPosation = { x: createRandom(), y: createRandom() }
-// Fix The Position of Food
 function createFood() {
     foodPosation = { x: createRandom(), y: createRandom() }
     samePosation = false;
-    for (var i = 0; i < snake.length; i++) {
-        if (foodPosation.x == snake[i].x && foodPosation.y == snake[i].y) {
-            samePosation = true;
-            break;
+    while (samePosation == false) {
+        for (var i = 0; i < snake.length; i++) {
+            if (foodPosation.x == snake[i].x && foodPosation.y == snake[i].y) {
+                console.log('foodPosation')
+                foodPosation = { x: createRandom(), y: createRandom() }
+                samePosation = true;
+                break;
+            }
         }
-    }
-    if (samePosation == true) {
-        console.log('sdf');
-        foodPosation = { x: createRandom(), y: createRandom() }
-    } else {
-        console.log(foodPosation);
+        break;
     }
     return foodPosation;
 }
@@ -224,9 +222,9 @@ function showFood(foodPosation) {
 
     ctx.beginPath();
     ctx.arc(foodPosation.x * size + size / 2, foodPosation.y * size + size / 2, size / 2, 0, 360);
-    ctx.fillStyle = "#13970b";
+    ctx.fillStyle = "#f03";
     ctx.lineWidth = 2;
-    ctx.shadowColor = "#13970b";
+    ctx.shadowColor = "#f03";
     ctx.shadowBlur = 15;
     ctx.fill();
     ctx.closePath();
@@ -305,19 +303,24 @@ function moveSnake(snake) {
         if (i == 0) {
             ctx.beginPath();
             ctx.rect(size * snake[i].x, size * snake[i].y, size, size);
-            ctx.fillStyle = "#000";
+            ctx.fillStyle = "#6c3700";
             ctx.lineWidth = 0;
-            ctx.shadowColor = "#000";
+            ctx.shadowColor = "#6c3700";
             ctx.shadowBlur = 0;
             ctx.fill();
         } else {
             ctx.beginPath();
             ctx.rect(size * snake[i].x, size * snake[i].y, size, size);
-            ctx.fillStyle = "#666";
+            ctx.fillStyle = "#ba5f01";
             ctx.lineWidth = 0;
-            ctx.shadowColor = "#666";
+            ctx.shadowColor = "#ba5f01";
             ctx.shadowBlur = 0;
             ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(size * snake[i].x + 1, size * snake[i].y + 1);
+            ctx.lineTo(size * snake[i].x + size - 1, size * snake[i].y + size - 1);
+            ctx.strokeStyle = '#8c4700';
+            ctx.stroke();
         }
     }
 
@@ -337,7 +340,6 @@ function moveSnake(snake) {
 
     if (snake[0].x == foodPosation.x && snake[0].y == foodPosation.y) {
         growSnake(snake, direction);
-        console.log(createFood())
         foodPosation = createFood();
         animationFood(snake[0].x, snake[0].y);
     }
@@ -346,12 +348,12 @@ function moveSnake(snake) {
 function animationFood(x, y) {
     var i = 0;
     var animationOnFood = setInterval(() => {
-        if (i < 20) {
+        if (i < 30) {
             ctx.beginPath();
             ctx.arc(x * size + size / 2, y * size + size / 2, i, 0, 360);
-            ctx.fillStyle = "#13970b";
+            ctx.fillStyle = "#f03";
             ctx.lineWidth = 0;
-            ctx.shadowColor = "#13970b";
+            ctx.shadowColor = "#f03";
             ctx.shadowBlur = 0;
             ctx.fill();
             i++;
